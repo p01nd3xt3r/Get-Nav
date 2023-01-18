@@ -44,7 +44,7 @@ Function Get-Nav {
     $NavHeaderPlusLocationRowCount = 6
     $NavHeader = (Prompt).tostring() + "`n"
     $NavFooterRowCount = 5
-    $NavFooter = "↑↓ Navigate list   ← Back to parent folder   → Enter selected folder`nSPACE ends the function at the current location   ENTER opens the selected file or folder`n/ pipes selected filepath and exits   Entering an active drive letter changes volume`n"
+    $NavFooter = "↑↓ Navigate list   ← Back to parent folder   → Enter selected folder`nSPACE ends the function at the current location   ENTER opens the selected file or folder`n/ pipes selected filepath and exits   Any existing drive-letter changes volume`n"
     $NavContentTopRow = $NavHeaderPlusLocationRowCount
     $NavContentMaxBottomRow = ((Get-Host).ui.rawui.windowsize.height) - $NavFooterRowCount - 2
     If (($NavContentMaxBottomRow - $NavContentTopRow) -lt 3) {
